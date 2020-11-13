@@ -1,2 +1,2 @@
 # TIL
-Today I Learned.
+Today I Learned.~草を生やす~
