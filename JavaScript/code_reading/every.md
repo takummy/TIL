@@ -5,6 +5,8 @@ function every(array, predicate) {
 
   while (++index < length) {
     if (!predicate(array[index], index, array)) {
+      // 引数のpredicate関数の結果がfalseならfalseを返す
+      // 引数の配列の要素に一つでもfalseになるものがあればwhileを抜けている
       return false
     }
   }
@@ -12,4 +14,5 @@ function every(array, predicate) {
 }
 ```
 
-predicate: 引数arrayを回す度に実行される関数
+predicate: 引数arrayを回す度に実行される関数。
+++index: 前置インクリメント演算子は、インクリメント後の値を返す。
